@@ -16,6 +16,11 @@ function helloWorld() {
 // }
 
 
-function sayHello(input) {
-    return "Hello " + input + "!";
+function sayHello(input= "World") {
+    if (input === true) {
+        return "Hello, World!"
+    } else {
+        return "Hello, " + input + "!";
+    }
 }
+
